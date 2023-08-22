@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- LINK CSS , BOOTSTRAP AND FONTAWSOME  -->
+
+    <link rel="stylesheet" href="bootstrap-5.3.0-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/86e8bfc776.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>ُEgyption Party</title>
+  </head>
+  <body>
+    <!-- START HOME SECTION -->
+    <section id="homeSection">
+      <div class="layer text-white text-center position-relative">
+        <div class="container position-absolute">
+          <h1>ُEgyption Party</h1>
+          <p>Let's have Fun</p>
+        </div>
+        <!-- ICON MENU -->
+        <i id="bars" class="fa-solid fa-bars position-absolute">open</i>
+
+        <!-- MENU -->
+        <div id="menu-fixed" class="menu-fixed position-fixed">
+          <i id="closeBtn" class="fa-solid fa-xmark"></i>
+          <a class="link" href="#homeSection">Home</a>
+          <a class="link" href="#details">Details</a>
+          <a class="link" href="#duration">Duration</a>
+          <a class="link" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
+    <!--- END OF HOME SECTION-->
+
+    <!-- Durati SECTION -->
+    <section id="details" class="my-5 py-5">
+      <div class="container text-center text-white">
+        <div class="w-75 m-auto">
+          <p class="title singerOne">Singer One</p>
+          <p class="content contentOne">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            labore aliquam, ab nisi, eius reiciendis nemo cum similique voluptas
+            ad mollitia, cumque enim. Doloremque eius provident magnam quos
+            excepturi veritatis.
+          </p>
+        </div>
+        <div class="w-75 m-auto">
+          <p class="title singerTwo">Singer Two</p>
+          <p class="content contentTwo">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            labore aliquam, ab nisi, eius reiciendis nemo cum similique voluptas
+            ad mollitia, cumque enim. Doloremque eius provident magnam quos
+            excepturi veritatis.
+          </p>
+        </div>
+        <div class="w-75 m-auto">
+          <p class="title singerThree">Singer Three</p>
+          <p class="content contentThree">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            labore aliquam, ab nisi, eius reiciendis nemo cum similique voluptas
+            ad mollitia, cumque enim. Doloremque eius provident magnam quos
+            excepturi veritatis.
+          </p>
+        </div>
+        <div class="w-75 m-auto">
+          <p class="title singerFour">Singer Four</p>
+          <p class="content contentFour">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis
+            labore aliquam, ab nisi, eius reiciendis nemo cum similique voluptas
+            ad mollitia, cumque enim. Doloremque eius provident magnam quos
+            excepturi veritatis.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END OF HEADER SECTION -->
+
+    <!-- START DURATION SECTION -->
+    <section id="duration" class="my-5">
+      <div class="layer">
+        <div class="container text-center text-white">
+          <div class="row">
+            <div class="col-3">
+              <div class="time">
+                <span id="days">00</span>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="time">
+                <span id="hours">00</span>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="time">
+                <span id="minutes">00</span>
+              </div>
+            </div>
+
+            <div class="col-3">
+              <div class="time">
+                <span id="seconds">00</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF DURATION SECTION -->
+
+    <!-- START Contact SECTION -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="head">
+          <h2>Join Us</h2>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 my-4">
+            <div class="info">
+              <h3><strong>CONTACT INFO</strong></h3>
+              <p>
+                Why you should hire me writeup Lorem ipsum dolor sit amet,
+                consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                Aenean massa. Cum sociis natoque nascetur ridiculus mus.
+              </p>
+
+              <div class="icons">
+                <p>
+                  <i class="fa fa-map-marker"></i> Street 22545,New York City,
+                  USA
+                </p>
+
+                <p class="text-danger">
+                  <i class="fa fa-envelope"></i> welcome@event.com
+                </p>
+                <p><i class="fa fa-phone"></i> +20 1-000-000-000</p>
+              </div>
+
+              <div class="social">
+                <i class="fab fa-twitter fa-fw"></i>
+                <i class="fab fa-facebook-f fa-fw"></i>
+                <i class="fab fa-instagram fa-fw"></i>
+                <i class="fab fa-dribbble fa-fw"></i>
+                <i class="fab fa-pinterest fa-fw"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 my-4">
+            <input
+              id="inputOne"
+              class="form-control input-lg my-2 rounded"
+              type="text"
+              placeholder="Enter Name"
+            />
+            <input
+              id="inputTwo"
+              class="form-control input-lg my-2 rounded"
+              type="email"
+              placeholder="Enter Email"
+            />
+            <textarea
+              id="textArea"
+              class="form-control input-lg my-2 rounded"
+              placeholder="Enter Message"
+              oninput="validationText()"
+            ></textarea>
+            <span class="err text-danger d-none pb-4"
+              ><b>100</b> words at least ...</span
+            >
+            <button class="btn btn-danger" id="btnForm">Send Message</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF Contact SECTION -->
+
+    <script src="./JQuery/code.jquery.com_jquery-3.7.0.min.js"></script>
+    <script src="/bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
